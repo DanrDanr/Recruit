@@ -27,8 +27,8 @@ public class LoginConfig implements WebMvcConfigurer {
         registration.addPathPatterns("/**"); //所有路径都被拦截
         registration.excludePathPatterns(    //添加不拦截路径
                 "/smsSendCode",                 //发送验证码路径
-                "/register",                 //注册路径
-                "/login",                //用户登陆
+                "/login_and_register",
+                "/company/login_and_register",
                 "/**/*.html",                //html静态资源
                 "/**/*.js",                  //js静态资源
                 "/**/*.css"                  //css静态资源
